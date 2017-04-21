@@ -13,15 +13,18 @@ class Machine extends g.FilledRect {
                 if(0 < this.x) {
                     this.x -= 5;
                 }
-            } else if(keyboard.get("ArrowRight")) {
+            }
+            if(keyboard.get("ArrowRight")) {
                 if(this.x + this.width < g.game.width) {
                     this.x += 5;
                 }
-            } else if(keyboard.get("ArrowUp")) {
+            }
+            if(keyboard.get("ArrowUp")) {
                 if(0 < this.y) {
                     this.y -= 5;
                 }
-            } else if (keyboard.get("ArrowDown")) {
+            }
+            if(keyboard.get("ArrowDown")) {
                 if(this.y + this.height < g.game.height) {
                     this.y += 5;
                 }
